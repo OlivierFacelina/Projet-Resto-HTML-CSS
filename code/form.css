@@ -1,5 +1,12 @@
 /* FORM */
 
+.title-form {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
 .form {
     width: 100vw;
     display: flex;
@@ -29,9 +36,14 @@ form {
         padding-bottom: 20px;
     }
 
+    #lastname, #firstname {
+        text-align: left;
+    }
+
     #email {
-        width: 50%;
+        width: 100%;
         justify-content: center;
+        text-align: left;
     }
 
     .testt {
@@ -40,14 +52,16 @@ form {
 }
 
 .form-control {
-    width: 75%;
+    width: 80%;
 }
 
 .btn {
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left: 40%;
+    justify-content: center;
     background-color: black;
     color: white;
+    margin-bottom: 50px;
 }
 
 .btn:hover {
