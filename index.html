@@ -27,31 +27,33 @@
       <section id="reservation">
         <div class="form">
           <form method="get" action="">
-            <div class="mb-3">
-              <label for="lastname" class="form-label">Nom :</label>
-              <input
-                type="text"
-                class="form-control"
-                id="lastname"
-                name="lastname"
-                placeholder="Nom"
-                aria-describedby="emailHelp"
-                required
-                pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="firstname" class="form-label">Prénom :</label>
-              <input
-                type="text"
-                class="form-control"
-                id="firstname"
-                name="firstname"
-                placeholder="Prénom"
-                aria-describedby="emailHelp"
-                required
-                pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
-              />
+            <div class="one">
+              <div class="mb-3">
+                <label for="lastname" class="form-label">Nom :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Nom"
+                  aria-describedby="emailHelp"
+                  required
+                  pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="firstname" class="form-label">Prénom :</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Prénom"
+                  aria-describedby="emailHelp"
+                  required
+                  pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+                />
+              </div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email :</label>
@@ -65,27 +67,31 @@
                 pattern="[\w-\.]+@([\w-]+\.)+[\w-]{2,4}"
               />
             </div>
-            <div class="mb-3">
-              <label for="days" class="form-label"
-                >Votre date de réservation :</label
-              >
-              <input
-                type="date"
-                class="form-control"
-                id="days"
-                name="days"
-                required
-              />
-              <label class="form-label" for="hours"
-                >Heure de réservation :</label
-              >
-              <input
-                type="time"
-                class="form-control"
-                id="hours"
-                name="hours"
-                required
-              />
+            <div class="two">
+              <div class="mb-3">
+                <label for="days" class="form-label"
+                  >Votre date de réservation :</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="days"
+                  name="days"
+                  required
+                />
+              </div>
+              <div class="mb-3 testt">
+                <label class="form-label hours" for="hours"
+                  >Heure de réservation :</label
+                >
+                <input
+                  type="time"
+                  class="form-control"
+                  id="hours"
+                  name="hours"
+                  required
+                />
+              </div>
             </div>
             <select class="form-select" aria-label="Default select example">
               <option selected>Nombre de personnes</option>
@@ -95,7 +101,7 @@
               <option value="4">4</option>
               <option value="5">5 ou plus</option></select
             ><br />
-            <button type="submit" class="btn btn-danger">Submit</button>
+            <button type="submit" class="btn">Envoyer</button>
           </form>
         </div>
       </section>
