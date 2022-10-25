@@ -249,11 +249,11 @@ form {
 
 /* AVIS */
 
-#avis {
+#notice {
     overflow-x: hidden;
  }
  
- .title-avis{
+ .title-notice{
      display: flex;
      justify-content: center;
      font-weight: bold;
