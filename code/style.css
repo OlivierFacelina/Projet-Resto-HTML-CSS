@@ -1,0 +1,58 @@
+/* FORM */
+
+.form {
+    width: 100vw;
+    display: flex;
+}
+
+form {
+    display: table;
+    padding: 5vh;
+    margin: auto;
+    margin-top: 5vh;
+} 
+
+@media screen and (min-width: 1200px) {
+    form {
+        display: block;
+    }
+
+    .one {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .two {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #email {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .testt {
+        margin-left: 22px;
+    }
+}
+
+.form-control {
+    width: 75%;
+}
+
+.btn {
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0;
+}
