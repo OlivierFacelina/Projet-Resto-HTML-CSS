@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bon Appétit !</title>
+  </head>
+  <body>
+    <main>
+      <!-- SECTION FORMULAIRE -->
+      <section id="menu">
+        <section id="reservation">
+          <div class="form">
+            <form method="get" action="">
+              <div class="title-form">
+                <h2>CONTACT</h2>
+              </div>
+              <div class="one">
+                <div class="mb-3">
+                  <label for="lastname" class="form-label">Nom :</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Nom"
+                    aria-describedby="emailHelp"
+                    required
+                    pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="firstname" class="form-label">Prénom :</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Prénom"
+                    aria-describedby="emailHelp"
+                    required
+                    pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email :</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  pattern="[\w-\.]+@([\w-]+\.)+[\w-]{2,4}"
+                />
+              </div>
+              <div class="two">
+                <div class="mb-3">
+                  <label for="days" class="form-label"
+                    >Votre date de réservation :</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="days"
+                    name="days"
+                    required
+                  />
+                </div>
+                <div class="mb-3 testt">
+                  <label class="form-label hours" for="hours"
+                    >Heure de réservation :</label
+                  >
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="hours"
+                    name="hours"
+                    required
+                  />
+                </div>
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Nombre de personnes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 ou plus</option></select
+              ><br />
+              <button type="submit" class="btn">Envoyer</button>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
