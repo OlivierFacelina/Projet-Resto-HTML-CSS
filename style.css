@@ -32,6 +32,17 @@ header {
 
 /* NAV */
 
+nav#nav-bg{
+    background-color:#fff0!important;
+
+}
+
+@media only screen and (max-width: 900px) {
+    ul{
+        background-color:#252525!important;
+    }
+}
+
 .banner{
     position: sticky;
     top: 0%;
