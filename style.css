@@ -67,13 +67,15 @@ nav#nav-bg{
 }
 
 .navbar-brand{
-    color: red;
     transition: .5s ease-in-out;
+    width: 8vw;
+    overflow: hidden;
 }
 
-.navbar-brand:hover{
-    transform: scale(1.1);
-    color: white;
+@media only screen and (max-width: 600px) {
+    .navbar-brand{
+        width: 25vw;
+    }
 }
 
 
