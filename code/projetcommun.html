@@ -21,13 +21,9 @@
 </html>
 
 <body>
-  <header>
-    <!-- Bannière -->
-    <a href="#banner" title="top" class="logo">
-        <img src="./ressources/cover_dark-rogner.jpg" alt="bannière"/>
-    </a>
-      
-    <!-- Barre de navigation -->
+  <header>     
+  </header>
+  <div class="banner">
     <div class="container-nav">   <!--modification du nom en "container-nav" pour plus de cohérence-->
       <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">Bon Appétit !</a>
@@ -59,7 +55,7 @@
         </div>
       </nav>
     </div>
-  </header>
+  </div>
 
   <main>
     <!-- SECTION MENU -->
@@ -70,21 +66,21 @@
         <div id="part1">
             <div id="food_1">
                 <div id="img_food_1">
-                  <img src="/ressources/food_1_dark.jpg" width="400px">
+                  <img src="/ressources/food_1_dark.jpg" width="400px" alt="Boeuf saucé">
                 </div>
                 <div id="descript_food">
-                    <h3>Boeuf saucée</h3>
+                    <h3>Boeuf saucé</h3>
                     <p> Accompagner de ses légumes de saisons. <br>                        <!--modification description pour pas que le texte depasse de l'img-->
                         Boeuf, pomme de terre pané et légumes frais </p>
                   </div>
             </div>
             <div id="food_2">
                 <div id="img_food_2">
-                    <img src="/ressources/food_4_dark.jpg" width="400px">
+                    <img src="/ressources/food_4_dark.jpg" width="400px" alt="Burger du chef">
                 </div>
                 <div id="descript_food">
                   <h3>Burger du chef</h3>
-                  <p> Pain frais, salade, oignon, <br> salade et steak juteux </p>
+                  <p> Pain frais, salade, oignons, <br> salade et steak juteux </p>
                 </div>
             </div>
         </div>
@@ -92,7 +88,7 @@
         <div id="part2">                <!--div part2 mal fermé corrigé-->
             <div id="food_3">
                 <div id="img_food_3">
-                    <img src="/ressources/food_10_dark.jpg" width="400px">
+                    <img src="/ressources/food_10_dark.jpg" width="400px" alt="Pavé de saumon">
                 </div>
                 <div id="descript_food">
                   <h3>Pavé de saumon</h3>
@@ -102,7 +98,7 @@
             </div>
             <div id="food_4">
                 <div id="img_food_4">
-                    <img src="/ressources/food_11_dark.jpg" width="400px">
+                    <img src="/ressources/food_11_dark.jpg" width="400px" alt="La Pappardelle exquise">
                 </div>
                 <div id="descript_food">
                   <h3>La Pappardelle exquise</h3>    <!--pas besoin de class pour le h3-->
@@ -111,7 +107,7 @@
             </div>
         </div>
             <div id="sign">
-                <img src="/ressources/signature.png" width="100px">
+                <img src="/ressources/signature.png" width="100px" alt="Signature">
             </div>
         </div>
         <section id="gallery">
@@ -119,13 +115,13 @@
           <div class="goat">
               <div class="slideshow">
                   <ul>
-                  <li><img src="/ressources/food_1_dark.jpg" alt><span>Boeuf saucée <br> accompagnée de ses légumes de saisons</span></li>
-                  <li><img src="/ressources/food_4_dark.jpg" alt><span>Burger du chef</span></li>
-                  <li><img src="/ressources/food_5_dark.jpg" alt><span>La bouillabaisse</span></li>
-                  <li><img src="/ressources/food_6_dark.jpg" alt><span>Saumon fumé sous sa couverture de verdure <br> et de poisson pané</et></span></li>
-                  <li><img src="/ressources/food_7_dark.jpg" alt><span>Boeuf persillé sur son coulis <br> d'oeuf et de tomates</span></li>
-                  <li><img src="/ressources/food_10_dark.jpg" alt><span>Pavé de saumon sous sa couverture de verdure <br> accompagnée de sa sauce secrète</span></li>
-                  <li><img src="/ressources/food_11_dark.jpg" alt><span>La Pappardelle exquise</span></li>
+                  <li><img src="/ressources/food_1_dark.jpg" alt="Boeuf saucé"><span>Boeuf saucé <br> accompagnée de ses légumes de saisons</span></li>
+                  <li><img src="/ressources/food_4_dark.jpg" alt="Burger du chef"><span>Burger du chef</span></li>
+                  <li><img src="/ressources/food_5_dark.jpg" alt="La bouillabaisse"><span>La bouillabaisse</span></li>
+                  <li><img src="/ressources/food_6_dark.jpg" alt="Saumon fumé"><span>Saumon fumé sous sa couverture de verdure <br> et de poisson pané</et></span></li>
+                  <li><img src="/ressources/food_7_dark.jpg" alt="Boeuf persillé"><span>Boeuf persillé sur son coulis <br> d'oeuf et de tomates</span></li>
+                  <li><img src="/ressources/food_10_dark.jpg" alt="Pavé de saumon"><span>Pavé de saumon sous sa couverture de verdure <br> accompagnée de sa sauce secrète</span></li>
+                  <li><img src="/ressources/food_11_dark.jpg" alt="La Pappardelle exquise"><span>La Pappardelle exquise</span></li>
                   </ul>
                   <div class="barre_progression"></div>
               </div>
@@ -238,17 +234,17 @@
               <h5 class="card-title">DOE Alice</h5>
               <p class="card-date">Publié le : 29/10/2022</p>
               <div class="stars">
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
               </div>
               <p class="card-text">
                 Très bien accueilli. Rien a redire sur le service. Les plats
-                étaient tous parfait. Les prix sont relativement abordable.
+                étaient tous parfait. Les prix sont relativement abordables.
                 <br />
-                Je me suis vraiment régalé, je recommande vivement cette
+                Je me suis vraiment régalée, je recommande vivement cette
                 adresse.
               </p>
             </div>
@@ -264,11 +260,11 @@
               <h5 class="card-title">DOE Laura</h5>
               <p class="card-date">Publié le : 11/09/2022</p>
               <div class="stars">
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
               </div>
               <p class="card-text">
                 Agréablement surprise. <br />
@@ -292,17 +288,17 @@
               <h5 class="card-title">DOE Caroline</h5>
               <p class="card-date">Publié le : 13/08/2022</p>
               <div class="stars">
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilepleine.png" />
-                <img src="/ressources/etoilevide.png" />
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilepleine.png" alt="etoile"/>
+                <img src="/ressources/etoilevide.png" alt="etoile"/>
               </div>
               <p class="card-text">
-                Je suis aller à cette adresse pour y manger un midi en famille.
+                Je suis allée à cette adresse pour y manger un midi en famille.
                 <br />
                 Le service était plutôt rapide pourtant le restaurant était
-                presque complet. Nous avons tous était comblé par nos plats.
+                presque complet. Nous avons tous été comblé par nos plats.
                 <br />Je recommande.
               </p>
             </div>
@@ -320,29 +316,29 @@
     >
       <!-- Partie gauche -->
       <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
+        <span>Rejoignez-nous sur les réseaux :</span>
       </div>
       <!-- Partie gauche -->
 
       <!-- Partie droite -->
-      <div>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-facebook-f"></i>
+      <div class="social">
+        <a href="www.facebook.com" target="blank">
+          <img src="/ressources/fb.png" class="media" alt="Facebook">
         </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/home" target="blank">
+          <img src="/ressources/twitter.png" class="media" alt="Twitter">
         </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-google"></i>
+        <a href="https://google.com" target="blank">
+          <img src="/ressources/google.png" class="media" alt="Google">
         </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-instagram"></i>
+        <a href="https://fr.linkedin.com/" target="blank">
+          <img src="/ressources/linkedin.png" class="media" alt="Linkedin">
         </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://www.instagram.com/" target="blank">
+          <img src="/ressources/instagram.png" class="media" alt="Instagram">
         </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/" target="blank">
+          <img src="/ressources/github.png" class="media" alt="Github">
         </a>
       </div>
     </section>
