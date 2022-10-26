@@ -22,9 +22,14 @@
 
 <body>
   <header>
+    <!-- Bannière -->
+    <a href="#banner" title="top" class="logo">
+        <img src="./ressources/cover_dark-rogner.jpg" alt="bannière"/>
+    </a>
+      
     <!-- Barre de navigation -->
-    <div class="container">
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container-nav">   <!--modification du nom en "container-nav" pour plus de cohérence-->
+      <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">Bon Appétit !</a>
         <button
           class="navbar-toggler"
@@ -67,41 +72,44 @@
                 <div id="img_food_1">
                   <img src="/ressources/food_1_dark.jpg" width="400px">
                 </div>
-                <div id="descript_food_1">
-                  <h3>Boeuf saucée <br> accompagnée de ses légumes de saisons<h3>
-                  <p> Boeuf, pomme de terre pané <br> et légumes frais </p>
-                </div>
+                <div id="descript_food">
+                    <h3>Boeuf saucée</h3>
+                    <p> Accompagner de ses légumes de saisons. <br>                        <!--modification description pour pas que le texte depasse de l'img-->
+                        Boeuf, pomme de terre pané et légumes frais </p>
+                  </div>
             </div>
             <div id="food_2">
                 <div id="img_food_2">
                     <img src="/ressources/food_4_dark.jpg" width="400px">
                 </div>
-                <div id="descript_food_2">
+                <div id="descript_food">
                   <h3>Burger du chef</h3>
                   <p> Pain frais, salade, oignon, <br> salade et steak juteux </p>
                 </div>
             </div>
         </div>
         <div id="line"><hr></div>
-        <div id="part2"></div>
+        <div id="part2">                <!--div part2 mal fermé corrigé-->
             <div id="food_3">
                 <div id="img_food_3">
                     <img src="/ressources/food_10_dark.jpg" width="400px">
                 </div>
-                <div id="descript_food_3">
-                  <h3>Pavé de saumon sous sa couverture de verdure <br> accompagnée de sa sauce secrète</h3>
-                  <p> Saumon frais, salade, citron <br> et sauce samourai </p>
+                <div id="descript_food">
+                  <h3>Pavé de saumon</h3>
+                  <p> Sous sa couverture de verdure. Saumon frais, salade, <br>
+                    citron et sauce samourai </p>                                                     <!--modification description pour pas que le texte depasse de l'img-->
                 </div>
             </div>
             <div id="food_4">
                 <div id="img_food_4">
                     <img src="/ressources/food_11_dark.jpg" width="400px">
                 </div>
-                <div id="descript_food_4">
-                  <h3 class="name4">La Pappardelle exquise</h3>
+                <div id="descript_food">
+                  <h3>La Pappardelle exquise</h3>    <!--pas besoin de class pour le h3-->
                   <p> Pâtes fraîches, amandes et persil. <br> Pour une fraicheur inoubliable </p>
                 </div>
             </div>
+        </div>
             <div id="sign">
                 <img src="/ressources/signature.png" width="100px">
             </div>
@@ -305,7 +313,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start bg-white text-muted">
+  <footer class="text-center text-lg-start text-muted">  <!-- supression de "bg-white"-->
     <!-- Réseaux sociaux -->
     <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"

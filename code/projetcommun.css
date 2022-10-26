@@ -1,6 +1,47 @@
 body { 
     margin:0; padding: 0; font-family: Garamond;
+    overflow-x: hidden;
 }
+
+
+/* NAV */
+nav{
+    position: sticky;
+    overflow: hidden;
+}
+
+.container-nav{
+    background-color: #2A2A2A;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand{
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+
+.nav-link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .5s ease-in-out;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
 
 /* MENU */
 
@@ -13,54 +54,88 @@ body {
 /*Parametres de la section carte*/
 #card {
     padding-top: 50px;
-    background-color: rgb(54, 51, 51);
-    color: white;
-    text-align: center;
+    background-color:#2A2A2A;
+    text-align: center; 
 }
 
 #card h2 {
     padding-top: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;    /* h2 mis en majuscule*/
 }
 
-h3 { 
-    font-size: 25px;
+#card h3 { 
+    /* font-size: 25px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Garamond; 
+    color: red;         /* modification des h3 */
+}
+
+#descript_food{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: white;
 }
 
 /*initialisation des bordures des plats*/
+
 #food_3{
     display: inline-block;
 }
 
 #food_4{
     display: inline-block;  
-    margin-left: 225px;
+    /* margin-left: 225px; */
 }
 
-h3.name4{
+/* h3.name4{
    top: 100px
-}
+} */
+
 #part1{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;                   /* modification des #part */
+    flex-wrap: wrap;
 }
 
 #part2{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-#line{
+/* #line{
 width: 700px;
 border-top: 0px solid;
 margin-left: 400px;
-border: 50px solid rgb(54, 51, 51);
-} 
+border: 50px solid#2A2A2A;
+}  */
 
-#sign{
+
+#line hr{
+    width: 50vw;
+    height: 2px;
+    background-color: white;
+    border:  0px solid white;     /* modification line hr */
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* #sign{
     border: 1px solid rgb(54, 51, 51);
     border-top: 50px solid rgb(54, 51, 51);
     padding-bottom: 50px;
-}
+} */
+
+#sign{
+    padding: 10vh;   /* modification signature */
+ }
 
 
 /*Gallerie photo*/
@@ -181,6 +256,7 @@ animation: barre_progression 25s ease-out infinite;
     justify-content: center;
     font-weight: bold;
     margin-bottom: 50px;
+    font-family: Garamond;       /*ajout de font Garamond */
 }
 
 .form {
@@ -193,6 +269,7 @@ form {
     padding: 5vh;
     margin: auto;
     margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;        /*ajout de font arial */
 } 
 
 @media screen and (min-width: 1200px) {
@@ -232,31 +309,35 @@ form {
 }
 
 .btn {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10%;
     margin-left: 40%;
     justify-content: center;
-    background-color: black;
+    background-color: #2A2A2A;
     color: white;
     margin-bottom: 50px;
+    border-radius: 0px;    /* rajoue de border radius 0px */
 }
 
 .btn:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 /* AVIS */
 
 #notice {
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;        /*ajout de font arial */
  }
  
  .title-notice{
      display: flex;
      justify-content: center;
      font-weight: bold;
+     font-family: Garamond;    /*ajout de font Garamond */
  }
  
  .row{
@@ -298,4 +379,10 @@ form {
      .card{
          margin-bottom: 70px;
      }
+ }
+
+ /* footer */
+ footer{
+    background-color: #2A2A2A;
+    font-family: Arial, Helvetica, sans-serif;
  }
