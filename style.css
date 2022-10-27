@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: flex-end;
     height: 60vh;
-    background-image: url(/ressources/cover_dark.jpg);
+    background-image: url(./ressources/cover_dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
