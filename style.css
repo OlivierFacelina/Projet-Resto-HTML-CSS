@@ -377,6 +377,12 @@ form {
     border-radius: 0px;
 }
 
+@media only screen and (max-width: 900px){
+    .btn {
+        margin-left: 30%;
+    }
+}
+
 /* AVIS */
 
 #notice {
@@ -442,6 +448,12 @@ form {
 
 .social {
     display: flex;
+}
+
+@media only screen and (max-width: 600px){
+    .social{
+        margin-right: 15%;
+    }
 }
 
 .media {
