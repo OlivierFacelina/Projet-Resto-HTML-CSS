@@ -151,7 +151,7 @@
             <div class="one">
               <div class="mb-3">
                 <!-- Label Nom -->
-                <label for="lastname" class="form-label">Nom :</label>
+                <label for="lastname" class="form-label">Nom *: </label>
                 <input
                   type="text"
                   class="form-control"
@@ -165,7 +165,7 @@
               </div>
               <div class="mb-3">
                 <!-- Label Prénom -->
-                <label for="firstname" class="form-label">Prénom :</label>
+                <label for="firstname" class="form-label">Prénom *:</label>
                 <input
                   type="text"
                   class="form-control"
@@ -180,7 +180,7 @@
             </div>
             <div class="mb-3">
               <!-- Label Email -->
-              <label for="email" class="form-label">Email :</label>
+              <label for="email" class="form-label">Email *:</label>
               <input
                 type="email"
                 class="form-control"
@@ -195,7 +195,7 @@
               <div class="mb-3">
                 <!-- Label Date réservation-->
                 <label for="days" class="form-label"
-                  >Votre date de réservation :</label
+                  >Votre date de réservation *:</label
                 >
                 <input
                   type="date"
@@ -208,7 +208,7 @@
               <div class="mb-3 testt">
                 <!-- Label Heure réservation -->
                 <label class="form-label hours" for="hours"
-                  >Heure de réservation :</label
+                  >Heure de réservation *:</label
                 >
                 <input
                   type="time"
@@ -221,13 +221,14 @@
             </div>
             <!-- Select pour le nb de personnes -->
             <select class="form-select" aria-label="Default select example">
-              <option selected>Nombre de personnes</option>
+              <option selected>Nombre de personnes *</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5 ou plus</option></select
             ><br />
+            <h4 class="required">* : Champs obligatoires.</h4>
             <!-- Bouton -->
             <button type="submit" class="btn">Réserver</button>
           </form>

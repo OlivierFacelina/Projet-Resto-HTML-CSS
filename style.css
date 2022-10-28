@@ -350,6 +350,11 @@ form {
     width: 80%;
 }
 
+.required {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
 .btn {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10%;
