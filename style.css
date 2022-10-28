@@ -1,3 +1,5 @@
+/* Général */ 
+
 body { 
     margin: 0; 
     padding: 0; 
@@ -5,6 +7,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Pour l'image en arrière plan */
 header {
     display: flex;
     align-items: flex-end;
@@ -16,6 +19,7 @@ header {
     transform-origin: center;
 }
 
+/* Responsive de l'image en arrière plan */
 @media only screen and (max-width: 900px) {
     header {
         display: flex;
@@ -37,6 +41,7 @@ nav#nav-bg{
 
 }
 
+/* Responsive de la liste dans la navbar */
 @media only screen and (max-width: 900px) {
     ul{
         background-color:#252525!important;
@@ -102,7 +107,7 @@ nav#nav-bg{
     margin-bottom: 50px;
 }
 
-/*Parametres de la section carte*/
+/* Paramètres de la section carte */
 #card {
     padding-top: 50px;
     background-color:#2A2A2A;
@@ -113,15 +118,14 @@ nav#nav-bg{
     padding-top: 50px;
     text-transform: uppercase;
     color: white;
-    text-align: center;    /* h2 mis en majuscule*/
+    text-align: center;   
 }
 
 #card h3 { 
-    /* font-size: 25px; */
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: Garamond; 
-    color: red;         /* modification des h3 */
+    color: red;     
 }
 
 #descript_food{
@@ -130,7 +134,7 @@ nav#nav-bg{
     color: white;
 }
 
-/*initialisation des bordures des plats*/
+/* Initialisation des bordures des plats */
 
 #food_3{
     display: inline-block;
@@ -138,17 +142,13 @@ nav#nav-bg{
 
 #food_4{
     display: inline-block;  
-    /* margin-left: 225px; */
 }
 
-/* h3.name4{
-   top: 100px
-} */
-
+/* Modification des #part */
 #part1{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;                   /* modification des #part */
+    flex-direction: row;                   
     flex-wrap: wrap;
 }
 
@@ -159,37 +159,25 @@ nav#nav-bg{
     flex-wrap: wrap;
 }
 
-/* #line{
-width: 700px;
-border-top: 0px solid;
-margin-left: 400px;
-border: 50px solid#2A2A2A;
-}  */
-
-
+/* Modification des hr */
 #line hr{
     width: 50vw;
     height: 2px;
     background-color: white;
-    border:  0px solid white;     /* modification line hr */
+    border:  0px solid white;     
     display: flex;
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
-/* #sign{
-    border: 1px solid rgb(54, 51, 51);
-    border-top: 50px solid rgb(54, 51, 51);
-    padding-bottom: 50px;
-} */
-
+/* Modification signature */
 #sign{
-    padding: 10vh;   /* modification signature */
+    padding: 10vh;  
  }
 
 
-/*Gallerie photo*/
+/* Gallerie photo */
 .goat{
 box-sizing: border-box; 
 background-color:  white;
@@ -279,7 +267,7 @@ right: 0;
 left: 0
 }
     
-/*****barre progression *****/
+/* Barre progression */
 .barre_progression{ 
     
 position: absolute;
@@ -291,7 +279,7 @@ animation: barre_progression 25s ease-out infinite;
     
 }
     
-/*****animation barre progression *****/    
+/* Animation barre progression */    
 @keyframes barre_progression{
 0%,20%,40%,60%,80%,100%{width: 0%;opacity: 0}
 4%,24%,44%,64%,84%{width: 0%;opacity: .3}
@@ -302,14 +290,16 @@ animation: barre_progression 25s ease-out infinite;
 
 /* FORM */
 
+/* Ajout de la police font Garamond sur le titre du formulaire */
 .title-form {
     display: flex;
     justify-content: center;
     font-weight: bold;
     margin-bottom: 50px;
-    font-family: Garamond;       /*ajout de font Garamond */
+    font-family: Garamond;       
 }
 
+/* FORM */ 
 .form {
     width: 100vw;
     display: flex;
@@ -323,6 +313,7 @@ form {
     font-family: Arial, Helvetica, sans-serif;        /*ajout de font arial */
 } 
 
+/* Responsive form */ 
 @media screen and (min-width: 1200px) {
     form {
         display: block;
@@ -367,7 +358,7 @@ form {
     background-color: #2A2A2A;
     color: white;
     margin-bottom: 50px;
-    border-radius: 0px;    /* rajoue de border radius 0px */
+    border-radius: 0px;   
 }
 
 .btn:hover {
@@ -387,14 +378,14 @@ form {
 
 #notice {
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;        /*ajout de font arial */
+    font-family: Arial, Helvetica, sans-serif;       
  }
  
  .title-notice{
      display: flex;
      justify-content: center;
      font-weight: bold;
-     font-family: Garamond;    /*ajout de font Garamond */
+     font-family: Garamond;  
  }
  
  .row{
@@ -425,7 +416,7 @@ form {
      width: 25px;
  }
  
- /* responsive iphone et ipad */
+ /* Responsive iPhone et iPad */
  @media only screen and (max-width: 600px){
      .card{
          margin-bottom: 70px;
@@ -438,18 +429,19 @@ form {
      }
  }
 
- /* footer */
+ /* Footer */
  footer{
     background-color: #2A2A2A;
     font-family: Arial, Helvetica, sans-serif;
  }
 
- /* Les réseaux sociaux */ 
+ /* Réseaux sociaux */ 
 
 .social {
     display: flex;
 }
 
+/* Responsive réseaux sociaux */ 
 @media only screen and (max-width: 600px){
     .social{
         margin-right: 15%;
